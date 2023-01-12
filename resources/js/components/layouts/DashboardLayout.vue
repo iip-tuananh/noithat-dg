@@ -89,19 +89,19 @@ export default {
       objSidebar: [
         {
           icon: "mdi mdi-crosshairs-gps menu-icon",
-          name: "Quản lý dự án",
+          name: "Quản lý thiết kế",
           route_name: "",
           sub: [
             {
-              name: "Danh mục dự án",
+              name: "Danh mục thiết kế",
               path: "/product/category",
             },
             {
-              name: "Loại dự án",
+              name: "Loại thiết kế",
               path: "/product/type",
             },
             {
-              name: "Danh sách dự án",
+              name: "Danh sách thiết kế",
               path: "/product",
             },
           ],
@@ -117,17 +117,17 @@ export default {
         //     }
         //   ],
         // },
-        // {
-        //   icon: "mdi mdi-newspaper menu-icon",
-        //   name: "Dự án",
-        //   route_name: "",
-        //   sub: [
-        //     {
-        //       name: "Danh sách ",
-        //       path: "/project",
-        //     }
-        //   ],
-        // },
+        {
+            icon: "mdi mdi-newspaper menu-icon",
+            name: "Quản lý dự án",
+            route_name: "",
+            sub: [
+            {
+              name: "Danh sách ",
+              path: "/project",
+            }
+          ],
+        },
         {
           icon: "mdi mdi-newspaper menu-icon",
           name: "Trang nội dung",
@@ -141,19 +141,19 @@ export default {
         },
         {
           icon: "mdi mdi-newspaper menu-icon",
-          name: "Quản lý tư vấn",
+          name: "Quản lý tin tức",
           route_name: "",
           sub: [
             {
-              name: "Danh mục tư vấn",
+              name: "Danh mục tin tức",
               path: "/blog/category",
             },
             // {
-            //   name: "Loại tư vấn",
+            //   name: "Loại tin tức",
             //   path: "/blog/type",
             // },
             {
-              name: "Danh sách tư vấn",
+              name: "Danh sách tin tức",
               path: "/blogs",
             },
           ],
@@ -178,10 +178,10 @@ export default {
               name: "Quản lý banner",
               path: "/banner",
             },
-            {
-              name: "Quản lý đối tác",
-              path: "/partner",
-            },
+            // {
+            //   name: "Quản lý đối tác",
+            //   path: "/partner",
+            // },
             {
               name: "Cài đặt chung",
               path: "/setting",
@@ -229,17 +229,17 @@ export default {
             }
           ],
         },
-        // {
-        //   icon: "mdi mdi-newspaper menu-icon",
-        //   name: "Quản lý Review",
-        //   route_name: "",
-        //   sub: [
-        //     {
-        //       name: "Danh sách dịch vụ",
-        //       path: "/reviewCus",
-        //     }
-        //   ],
-        // },
+        {
+          icon: "mdi mdi-newspaper menu-icon",
+          name: "Đội ngũ nhân viên",
+          route_name: "",
+          sub: [
+            {
+              name: "Danh sách dịch vụ",
+              path: "/reviewCus",
+            }
+          ],
+        },
       ],
     };
   },

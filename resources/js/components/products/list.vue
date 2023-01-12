@@ -3,8 +3,8 @@
       <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
           <div class="card-body">
-            <h4 class="card-title" >Danh sách dự án</h4>
-            <p class="card-description">Thêm mới hoặc sửa sửa dự án</p>
+            <h4 class="card-title" >Danh sách thiết kế</h4>
+            <p class="card-description">Thêm mới hoặc sửa sửa thiết kế</p>
 
             <router-link class="nav-link" :to="{name:'createProduct'}">
               <vs-button type="gradient" style="float:right;">Thêm mới</vs-button>
@@ -13,8 +13,8 @@
             <vs-input icon="search" placeholder="Search" v-model="keyword" @keyup="searchProduct()"/>
             <vs-table stripe :data="list" max-items="10" pagination>
               <template slot="thead">
-                <vs-th>Ảnh dự án</vs-th>
-                <vs-th>Tên dự án</vs-th>
+                <vs-th>Ảnh thiết kế</vs-th>
+                <vs-th>Tên thiết kế</vs-th>
                 <vs-th>Danh mục</vs-th>
                 <vs-th>Phân loại</vs-th>
                 <vs-th>Hành động</vs-th>
@@ -103,7 +103,7 @@ export default {
         type:'confirm',
         color: 'danger',
         title: `Bạn có chắc chắn`,
-        text: 'Xóa dự án này',
+        text: 'Xóa thiết kế này',
         accept:this.destroy
       })
     }

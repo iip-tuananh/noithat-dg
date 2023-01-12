@@ -41,7 +41,7 @@
                     </div>
                 </div>
               </div>
-              <div class="form-group">
+              <!-- <div class="form-group">
                 <label>Vị trí dự án</label>
                 <vs-input
                   type="text"
@@ -80,10 +80,10 @@
                   class="w-100"
                   v-model="objData.cdt"
                 />
-              </div>
+              </div> -->
               <div class="form-group">
                 <label>Ảnh bài viết</label>
-                <ImageMulti v-model="objData.images" :title="'giai-phap'"/> 
+                <ImageMulti v-model="objData.images" :title="'du-an'"/> 
               </div>
               <div class="form-group">
                 <label>Trạng thái</label>

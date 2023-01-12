@@ -5,7 +5,7 @@
           <div class="card">
             <div class="card-body">
               <div class="form-group">
-                <label>Tên khách hàng</label>
+                <label>Tên nhân viên</label>
                 <vs-input
                   type="text"
                   size="default"

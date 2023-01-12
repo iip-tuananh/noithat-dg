@@ -19,7 +19,7 @@ class ReviewCusController extends Controller
     {
     	$keyword = $request->keyword;
         if($keyword == ""){
-            $data = ReviewCus::orderBy('id','DESC')->get(['id','name','content','created_at']);
+            $data = ReviewCus::orderBy('id','DESC')->get(['id','name','content','created_at','avatar']);
         }else{
             $data = ReviewCus::where('title', 'LIKE', '%'.$keyword.'%')->orderBy('id','DESC')->get()->toArray();
         }

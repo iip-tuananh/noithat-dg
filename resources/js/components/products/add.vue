@@ -5,11 +5,11 @@
           <div class="card">
             <div class="card-body">
               <div class="form-group">
-                <label>Tên dự án</label>
+                <label>Tên thiết kế</label>
                 <vs-input
                   type="text"
                   size="default"
-                  placeholder="Tên dự án"
+                  placeholder="Tên thiết kế"
                   class="w-100"
                   v-model="objData.name[0].content"
                 />
@@ -27,7 +27,7 @@
                       v-if="index != 0"
                       type="text"
                       size="default"
-                      placeholder="Tên dự án"
+                      placeholder="Tên thiết kế"
                       class="w-100 inputlang"
                       v-model="objData.name[index].content"
                     />
@@ -61,7 +61,7 @@
                 </div>
               </div>
               <div class="form-group">
-                <label>Ảnh dự án</label>
+                <label>Ảnh thiết kế</label>
                 <ImageMulti v-model="objData.images" :title="'san-pham'"/> 
               </div>
               <!-- <div class="form-group">
@@ -98,7 +98,7 @@
                 </vs-select>
               </div>
               <div class="form-group">
-                <label>Danh mục dự án</label>
+                <label>Danh mục thiết kế</label>
                 <vs-select
                   class="selectExample"
                   v-model="objData.category"
@@ -256,7 +256,7 @@ export default {
       if(this.objData.content[0].content == '') this.errors.push('Nội dung không được để trống');
       if(this.objData.description[0].content == '') this.errors.push('Mô tả không được để trống');
       if(this.objData.images.length == 0) this.errors.push('Vui lòng chọn ảnh');
-      if(this.objData.category == 0) this.errors.push('Chọn danh mục dự án');
+      if(this.objData.category == 0) this.errors.push('Chọn danh mục thiết kế');
       // if(this.objData.service_id == null) this.errors.push('Chọn danh mục dịch vụ');
       if (this.errors.length > 0) {
         this.errors.forEach((value, key) => {
@@ -270,7 +270,7 @@ export default {
           .then((response) => {
             this.loadings(false);
             this.$router.push({ name: "listProduct" });
-            this.$success("Thêm dự án thành công");
+            this.$success("Thêm thiết kế thành công");
             this.$route.push({ name: "listProduct" });
           })
           .catch((error) => {
