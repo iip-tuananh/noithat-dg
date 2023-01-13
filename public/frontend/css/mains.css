@@ -186,6 +186,7 @@ form.submitting .wpcf7-spinner {
     position: relative;
     overflow: hidden;
     background-size: 40px;
+    bottom: 0px;
     border-radius: 28px;
     border: solid 1px #ccc
 }
@@ -15835,10 +15836,10 @@ li.wc-layered-nav-rating .star-rating {
 
 .fix_tel {
     top: auto;
-    bottom: auto;
+    /* bottom: auto; */
     right: auto;
-    left: auto;
-    bottom: 350px;
+    /* left: auto; */
+    bottom: 100px;
     left: 5px
 }
 

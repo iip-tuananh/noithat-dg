@@ -383,8 +383,13 @@
 
     <div class="quick-contact">
         <ul>
-            <li><a href="" rel="nofollow" target="_blank"><img style="width: 75%"
-                src="{{asset('frontend/images/zalo-logo-inkythuatso-14-15-05-01.jpg')}}" alt="" srcset="">
+            <li>
+                <a href="{{$setting->google}}" rel="nofollow" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEAUlEQVR4nO3Vb0wTdxgHcF4te7ftxRYTWIxjkUXMvFCOP6PeWSfSjWFGlVacW5a4LYsJEfwTnZhMp+iWjQ2zTIVJ3AaoixDdzLIpImgy5KAFLLRn5Y8C0tJhB92YIAjf5Q5a292v12tpfDOf5Js0d02fT57nd9eoqP9bmdXqZ3hWtc7K0FutrKpA+NzGLnv6kUO6U1Of45nEMp6lJ3mWxn8yaWXpYzfV1LOPBGPR0PE8S/cRIP5h6NvCd4P+4ILjGxZGlxq2RB8z7Aw16k+z9xtXJY8ExfigZCc1hxmNKTUgnBRvWqkM4hMrk3g0ICi6dH2Bb4O1P+9F46AF41P3MfD3ME7xl0H98D4R89LXOejUJEkaNqepUJEQL4ZLU5FQ93tWqZ4KADLs9TR499fPMDX9AP9MTaC+vx2cg8e9qQnoz39CBG3YkylpxqkT8FHcC9ixeDa742KJKCuTqJMFLSzLhX3MBdf4X1h+eou36dLvNgVcV0F+hqSRMBUPxpPKhHjSWdomC9LW7IRQJaYasdnL37+HSuslbw40VUpAeVu1ikBVCUtJa8uTBa05u0cEeRqnnsyDb7U6uyQg3cdZ0pWlqcQ1eTCFcbFoVktXdoOltbKgxeXviGfnhqsfscc3epumn9mBBzPTqLl5VQJadFSPxowUIkpYkxASxsrSf9xi2SeDHupD3ElxGrY/B1DUVIWvTNW4O+4WQcIESedoX356yI89z9CFAR56f9DzpetxkKvC2OS4d1XD90ax+dJhIoY6sQ42ToPe3GTl7yCWNncuWfKEIlDMXF4sfxtZZwvx6pntWPTtW4ExppUAvxwTdWmwpQfHdGqSp22apGUBMYFAMUHii/FkqGx1UNC5ffk2WUw4IIqAGevMRrupFh35HwbEdOR9gJILFQ0RBVEkjGUW02LkYLxaD2um9L9NuCbciyiIImCmu3LhtFvQ2mYSQULaj5RIQMI14V7EQFQAjNvVg5GREdidDrS2GWdRzddg0b3mxViyM2BsaYociCJgBlr0sHZ3iRhP7EMO76Tavzj4cDrFh7zTmzeIImD6OD10B3qxpsiN690uIspYXwd+RZIY4XNEQJQMhil0i5FDWfRvwGLI8mLmBaIUYORQjiEHOnZvg3lXwfxBFBFjIGLkUP2//YLrpyrmB6LCwMihBofsfq+EkEChrIkJE6UYFAkMI4O6M4dSBFpRoftcgmnOCQvjh+q564fqc9xB+ZXqxqCgmobV53wxt7gcvLn/dtiYh6hRmHuH/VDV5ssXgoK+qXv9FXcHMyNgerm1EcH4o5yzT51zcKa46XRKlJI6clGb8uNFQ23mlz8ZVUUN1yIZ7eHfjSe4K7WKMY/rcUWFVv8C3DEyR2H6Xr8AAAAASUVORK5CYII=">
+                    <br>
+                    Tìm đường</a>
+             </li>
+            <li><a href="https://zalo.me/{{$setting->phone1}}" rel="nofollow" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAACXBIWXMAAAsTAAALEwEAmpwYAAADsUlEQVR4nO2YW2wMURjHR1TihQfEg0t4QHdoFUW81aVPnpDwQumMWrfgAQkeehEsqZDwIEGClGoEEdeWoBJ1ibq06GrTonWrmnNmZtvdbbvt/uXMdnZnd7vtrDUi4iT/bDbz7cxv/uf7vvNlOe7/+teXy+UaQQhJkWV5gSRJmb2JXWMxLNYSiNQcjLlX6TpHKX1LKUWcclJKHZIkjU4YJN2OQbyA/MLzHt8vgETKTQgpADDwl2CSRQyxibhrP9QJQhKGMapUkqShccFk5CGJF3Avze5HTYPyO2F0lQFIMg3Ei9jNi4DjrNcKGE2EkHxzW7UK43kB7Sk5QEOjbBkQpdRDCBnbvzsC9jN3sg90Wgmju7SvXyCbiHoGVFTmthyIUlrTJ8zUFRjJYJieO9U/AQRFUYbFdicbM3Sgr82h/GluoThyyROlE9diu1j+3IUbFa1moFJjAwnI0IF+SKEfffsuY8fx9qDWHurUYg4UB6rwTb2Cyw/a8MKpoqpOxYdPMg6WeLHtWEfwHoGYVi0mAigjJlDyaszVgb4YHKI0HG5pgQ/rD3dAIhSnbroxfZ0fi3O7tM9pa/0oKmsLA4qMKSwJtRNZlueaAmpoim6IhFBsPtqBJXldGljTFxmseZa/cGnXmTuRQL3FMKiX79T4gF7XRQPtKfJi/rbuIOyjahVzNvnDYhbldoUBxYph2xcXUOmT8IQsKnNj5gY/nr0N5QBL/Fkb/bh4v037fr/ShdQ1CAPqLYY5pB9JpoGOXQlV0KNqVXtQ+no/Mrd3B3X4ggdXH7ZqD2QusO2avTGwZYUlnmAOGWPY9p25Fbq3aSBjhTjfK7j9tDVKtR8Cb8lcYNAfP8tabtR9VLRtNfYyFvO4WkXT1/Bi6RPIWPbsbb63WN8Y+y77bKTqQEzXHppqbIkqLbZDWRhuBFq22/e7h7Mo9Tt38yKcRqjiO4HqsEi1fcL0ADmMQPO2dmsd2QogQsjefoGSRYyyCXDrQFPt4efaHx/Qelwq0IGyHD5L3Llb6TrNmV5LMZAXcH3WBj+qahXNoYoqFY5zXuw62R48l+JVc4usTQUr9/vK2TPMA3EcN2E5hk4WUco6L+vSxrxiWrizCwWnvbhU3oanr1XUNyrBGYrNTw1NMl7VqlrrYLMTG1nYkWETcXPcKgyOCybCqXxjTiUgLy9iC8dhAJfomrgSo3kB+2wCauIF6ZnRHVOyYS6B4122LAy3iUjhRSzgBWTGki0H6ZPssObPhv+L+4vWT7SOR8M4w+1KAAAAAElFTkSuQmCC">
+                <br>
                 Chat Zalo</a></li>
             <li class="phone-mobile">
                 <a href="tel:{{$setting->phone1}}" rel="nofollow" class="button">
@@ -395,7 +400,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://www.messenger.com/t/Byzannoithathiendai" rel="nofollow" target="_blank"><img style="width: 36px" src="{{asset('frontend/images/logo-messenger-inkythuatso-2-01-30-15-48-06.jpg')}}" alt="" srcset="">
+                <a href="{{$setting->facebook}}" rel="nofollow" target="_blank"><img style="width: 36px" src="{{asset('frontend/images/logo-messenger-inkythuatso-2-01-30-15-48-06.jpg')}}" alt="" srcset="">
                     Messenger</a>
             </li>
             <li class="to-top-pc">  

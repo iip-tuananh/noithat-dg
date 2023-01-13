@@ -165,18 +165,15 @@ class PageController extends Controller
     public function duanTieuBieu()
     {
         $data['gioithieu'] = PageContent::where(['status'=>1,'language'=>'vi','type'=>'ve-chung-toi'])->first(['id','title','content','image','description']);
-        $data['duan'] = Project::where('status',1)->limit(1)->first();
-        $data['homePro'] = Product::where(['status'=>1,'discountStatus'=>1])
-            ->orderBy('id','DESC')
-            ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
-            ->paginate(9);
+        $data['duan'] = Project::where('status',1)->paginate(6);
         return view('album',$data);
     }
-    // public function duanTieuBieuDetail($slug)
-    // {
-    //     $data['detail'] = Project::where('slug',$slug)->first();
-    //     return view('detailProject',$data);
-    // }
+    public function duanTieuBieuDetail($slug)
+    {
+        $data['detail'] = Project::where('slug',$slug)->first();
+        $data['duanhot'] = Project::where('status',1)->limit(6)->first();
+        return view('detailProject',$data);
+    }
     public function fag()
     {
         return view('faq');

@@ -24,51 +24,20 @@ Dự án thi công
                 <div class="breadcrumbs-category">
                    <div class="site-breadcrumbs clr"><a href="{{route('home')}}">Trang chủ</a><span class="separator"> / </span><span class="last">Dự án thi công</span></div>
                 </div>
-                <div class="taxonomy-description text-left">
-                   <div class="row row-full-width" id="row-866283309">
-                      <div id="col-1972355911" class="col medium-8 small-12 large-8">
-                         <div class="col-inner">
-                            <div id="text-3592701949" class="text text-justify">
-                               <p>{!!$gioithieu->description !!}</p>
-                               
-                            </div>
-                         </div>
-                      </div>
-                      <div id="col-213504188" class="col medium-4 small-12 large-4">
-                         <div class="col-inner">
-                            <div class="img has-hover x md-x lg-x y md-y lg-y" id="image_472180649">
-                               <div class="img-inner dark">
-                                  <img width="1500" height="1000"
-                                   src="{{$gioithieu->image}}" 
-                                   class="attachment-original size-original" alt="Dự án thi công" loading="lazy">						
-                               </div>
-                               <style>
-                                  #image_472180649 {
-                                  width: 100%;
-                                  }
-                               </style>
-                            </div>
-                         </div>
-                      </div>
-                   </div>
-                   <div class="container section-title-container" style="margin-top: 50px">
-                      <h3 class="section-title section-title-center"><b></b><span class="section-title-main">Dự án thi công nội thất </span><b></b></h3>
-                   </div>
-                </div>
              </div>
           </div>
        </header>
        <div class="row align-center row-full-width ">
           <div class="large-12 col">
              <div class="row large-columns-3 medium-columns- small-columns-1 row-small row-full-width">
-                @foreach ($homePro as $produde)
+                @foreach ($duan as $duanS)
                     <div class="col post-item">
                     <div class="col-inner">
-                        <a href="{{route('detailProduct',['cate'=>$produde->cate_slug,'type'=>$produde->type_slug ? $produde->type_slug : 'loai','id'=>$produde->slug])}}" class="plain">
+                        <a href="{{route('duanTieuBieuDetail',['slug'=>$duanS->slug])}}" class="plain">
                             <div class="box box-normal box-text-bottom box-blog-post has-hover">
                                 <div class="box-image">
                                     @php
-                                        $img = json_decode($produde->images)
+                                        $img = json_decode($duanS->images)
                                     @endphp
                                     <div class="image-overlay-add image-zoom image-cover" style="padding-top: 50%;">
                                         <img
@@ -76,7 +45,7 @@ Dự án thi công
                                             height="1706"
                                             src="{{$img[0]}}"
                                             class="attachment-original size-original wp-post-image"
-                                            alt="{!!languageName($produde->name)!!}"
+                                            alt="{{$duanS->name}}"
                                             loading="lazy"
                                             srcset="
                                             {{$img[0]}}    2560w,
@@ -93,7 +62,7 @@ Dự án thi công
                                 </div>
                                 <div class="box-text text-left">
                                     <div class="box-text-inner blog-post-inner">
-                                        <h5 class="post-title is-large">{!!languageName($produde->name)!!}</h5>
+                                        <h5 class="post-title is-large">{{$duanS->name}}</h5>
                                         <div class="is-divider"></div>
                                     </div>
                                 </div>
@@ -103,7 +72,7 @@ Dự án thi công
                     </div>
                 @endforeach
                 <div class="c-box-paginate">
-                    {{$homePro->links()}}
+                    {{$duan->links()}}
                   </div>
                   <style>
                     .c-box-paginate nav{
@@ -167,14 +136,6 @@ Dự án thi công
                                  </div>
                               </div>
                            </form>
-                            {{-- <form action="{{route('postcontact')}}" method="post"  novalidate="novalidate" data-status="init">
-                                @csrf
-                               <p>
-                                 <input type="text" name="name" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Họ tên"></span><br>
-                                    <input type="text" name="phone" value="" size="40" class="" aria-invalid="false" placeholder="Số điện thoại"></span><br>
-                                  <input type="submit" value="NHẬN BÁO GIÁ" class="wpcf7-form-control has-spinner wpcf7-submit text-center">
-                               </p>
-                            </form> --}}
                          </div>
                       </div>
                       <style>
