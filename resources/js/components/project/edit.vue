@@ -148,7 +148,6 @@ export default {
         location:"",
         scale:"",
         operate:"",
-        cdt:""
       },
       lang:[]
     };

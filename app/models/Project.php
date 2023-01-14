@@ -23,7 +23,6 @@ class Project extends Model
                 $query->location = $request->location;
                 $query->scale = $request->scale;
                 $query->operate = $request->operate;
-                $query->cdt = $request->cdt;
                 $query->images = json_encode($request->images);
                 $query->status = $request->status;
                 $query->save();
@@ -36,7 +35,6 @@ class Project extends Model
                 $query->location = $request->location;
                 $query->scale = $request->scale;
                 $query->operate = $request->operate;
-                $query->cdt = $request->cdt;
                 $query->images = json_encode($request->images);
                 $query->status = $request->status;
                 $query->save();
@@ -51,7 +49,6 @@ class Project extends Model
                 $query->location = $request->location;
                 $query->scale = $request->scale;
                 $query->operate = $request->operate;
-                $query->cdt = $request->cdt;
                 $query->images = json_encode($request->images);
                 $query->status = $request->status;
                 $query->save();

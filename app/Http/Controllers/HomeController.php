@@ -15,6 +15,7 @@ use App\models\website\Prize;
 use App\models\website\AlbumAffter;
 use App\models\ReviewCus;
 use App\models\PageContent;
+use App\models\Project;
 
 class HomeController extends Controller
 {
@@ -32,6 +33,7 @@ class HomeController extends Controller
             ->orderBy('id','DESC')
             ->select('id','category','name','discount','price','images','slug','cate_slug','type_slug','description')
             ->limit(6)->get();
+        $data['duan'] = Project::where('status', 1)->limit(6)->get();
         return view('home',$data);
     }
 }

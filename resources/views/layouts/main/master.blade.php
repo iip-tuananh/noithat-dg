@@ -157,6 +157,8 @@
                     success: function(data) {
                         console.log(data);
                         $('#content-ajax').html(data.html);
+                        $('#content-ajax').addClass('active');
+
                     },
                     error: function(data) {
                         console.log('loi');
