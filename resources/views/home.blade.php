@@ -115,16 +115,15 @@
                             <div class="icon-box-img" style="width: 60px;">
                                 <div class="icon">
                                     <div class="icon-inner">
-                                        <img width="300" height="233" src="{{asset('frontend/images/100-NAM-KINH-NGHIEM-300x233.png')}}" class="attachment-medium size-medium" alt="10 NAM KINH NGHIEM" loading="lazy"
-                                            " sizes="(max-width: 300px) 100vw, 300px">
+                                        <img width="300" height="233" src="{{asset('frontend/images/100-NAM-KINH-NGHIEM-300x233.png')}}" class="attachment-medium size-medium" alt="10 NAM KINH NGHIEM" loading="lazy" sizes="(max-width: 300px) 100vw, 300px">
                                     </div>
                                 </div>
                             </div>
                             <div class="icon-box-text last-reset">
-                                <h5 class="uppercase">10 năm 1 phong cách</h5>
+                                <h5 class="uppercase">10 năm đa phong cách</h5>
 
                                 <div id="text-1648210717" class="text">
-                                    10 năm theo đuổi phong cách hiện đại, {{$setting->company}} khẳng định vị thế dẫn đầu trong trường phái này. Với &gt; 400 căn hộ được thiết kế &amp; thi công nội thất trọn gói mỗi năm, chúng tôi là 1
+                                    {{$setting->company}} khẳng định vị thế dẫn đầu trong trường phái này. Với &gt; 400 căn hộ được thiết kế &amp; thi công nội thất trọn gói mỗi năm, chúng tôi là 1
                                     trong những đơn vị uy tín hàng đầu miền Bắc.
                                 </div>
                             </div>

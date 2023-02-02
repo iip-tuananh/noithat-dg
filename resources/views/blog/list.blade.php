@@ -142,9 +142,9 @@ Tin tức nổi bật và mới nhất
                             </div>
                          </div>
                          <div class="icon-box-text last-reset">
-                            <h5 class="uppercase">10 năm 1 phong cách</h5>
+                            <h5 class="uppercase">10 năm đa phong cách</h5>
                             <div id="text-261106936" class="text">
-                               10 năm theo đuổi phong cách hiện đại, {{$setting->company}} khẳng định vị thế dẫn đầu trong trường phái này. Với &gt; 400 căn hộ được thiết kế &amp; thi công nội thất trọn gói mỗi năm, chúng tôi là 1 trong những đơn vị uy tín hàng đầu miền Bắc.
+                               {{$setting->company}} khẳng định vị thế dẫn đầu trong trường phái này. Với &gt; 400 căn hộ được thiết kế &amp; thi công nội thất trọn gói mỗi năm, chúng tôi là 1 trong những đơn vị uy tín hàng đầu miền Bắc.
                             </div>
                          </div>
                       </div>
